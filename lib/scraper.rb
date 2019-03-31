@@ -37,7 +37,7 @@ class Scraper
       student_links[:twitter] = x
     when x.include?("linkedin")
       student_links[:linkedin] = x
-    when a.include?('github')
+    when x.include?('github')
       student_links[:github] = x
     else
       student_links[:blog] = x
