@@ -3,9 +3,6 @@ require 'pry'
 require 'nokogiri'
 
 class Scraper
-#attr_accessor :name, :location, :profile_url, :index_url
-
-#@@all = []
 
   def self.scrape_index_page(index_url)
     student_site = Nokogiri::HTML(open(index_url))
