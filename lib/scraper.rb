@@ -35,6 +35,13 @@ class Scraper
     case
     when x.include?("twitter")
       student_links[:twitter] = x
+    when x.include?("linkedin")
+      student_links[:linkedin] = x
+    when a.include?('git')
+      student_file[:github] = a
+    else
+      student_file[:blog] = a
+
     end
       #binding.pry
     end
