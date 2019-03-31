@@ -32,6 +32,7 @@ class Scraper
 
     social_media_links = student_profile.css(".social-icon-container a").each do |sm_links|
     a = sm_links['href']
+    
       #binding.pry
     end
   end
