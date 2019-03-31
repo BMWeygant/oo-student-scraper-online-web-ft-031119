@@ -45,7 +45,7 @@ class Scraper
     end
     student_links[:profile_quote] = student_profile.css(".profile-quote").text
     student_links[:bio] = student_profile.css(".bio-content content-holder")
-    #binding.pry
+    binding.pry
     student_links
   end
 end
