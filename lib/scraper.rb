@@ -15,12 +15,24 @@ class Scraper
     student_site.css(".student-card").each do |student|
     name = student.css(".student-name").text
     location = student.css(".student-location").text
+    profile_url = student.css("a").attribute("href").value
       #binding.pry
+      students << {
+        name: name,
+        location: location,
+        profile_url: profile_url
+      }
     end
+    students
   end
 
   def self.scrape_profile_page(profile_url)
+    student_profile = Nokogiri::HTML(open(profile_url))
+    student = {}
 
+    social_media_links = student_profile.css(".social-icon-container").each do |profile|
+      binding.pry
+    end
   end
 
 end
