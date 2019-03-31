@@ -41,10 +41,9 @@ class Scraper
       student_links[:github] = x
     else
       student_links[:blog] = x
-
+  end
     end
-      #binding.pry
-    end
+    student_links
   end
 
 end
