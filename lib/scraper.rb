@@ -41,9 +41,9 @@ class Scraper
       student_links[:github] = x
     else
       student_links[:blog] = x
-  end
+      end
     end
+    student_links[:profile_quote] = student_profile.css(".profile-quote").text
     student_links
   end
-student_links[:profile_quote] = student_profile.css(".profile-quote").text
 end
