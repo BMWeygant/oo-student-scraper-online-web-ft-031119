@@ -30,7 +30,7 @@ class Scraper
     student_profile = Nokogiri::HTML(open(profile_url))
     student = {}
 
-    social_media_links = student_profile.css(".social-icon-container").each do |profile|
+    social_media_links = student_profile.css(".social-icon-container").each do |sm_links|
       binding.pry
     end
   end
