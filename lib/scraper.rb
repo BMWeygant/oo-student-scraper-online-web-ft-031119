@@ -38,9 +38,9 @@ class Scraper
     when x.include?("linkedin")
       student_links[:linkedin] = x
     when a.include?('git')
-      student_file[:github] = x
+      student_links[:github] = x
     else
-      student_file[:blog] = x
+      student_links[:blog] = x
 
     end
       #binding.pry
